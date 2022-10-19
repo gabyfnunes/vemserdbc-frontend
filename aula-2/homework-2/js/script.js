@@ -52,7 +52,7 @@ function calcular(){
             document.getElementById('resultado').value = valor1 / valor2
             break;
           }else{
-            document.getElementById('resultado').value = 'Divisão por zero não permitida.';
+            document.getElementById('resultado').value = 'Não é possível dividir um número por zero.';
             break;
           }
         case 'multiplicar': 
