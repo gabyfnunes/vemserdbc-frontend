@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homework</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <h1>Homework da Gabys</h1>
+    <section class='container'>
+
+        <hr>
+        <h2>Exercício 1</h2>
+
+        <h2 id='frase'>Antes eu era assim</h2>
+        <input type='button' onclick="document.getElementById('frase').innerHTML = 'Agora eu sou assim!'" class='btn btn-info' value='Quer ver algo legal?'>
+        
+        <hr>
+        <h2 >Exercicio 2</h2>
+         <p id="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores perspiciatis fugiat, obcaecati consectetur vitae odit. Dolore delectus voluptas cumque sint aliquid, rem fugiat aut fugit omnis, quidem at dignissimos praesentium.</p>
+        <input type="color" value="#ffffff" oninput="mudarCor(this.value)">
+
+
+        <hr>
+        <h2>Exercicio 3</h2>
+
+            <div>
+                <p id="contador">0</p>
+            </div>
+        <input type="button" onclick="contadorJs()" class="btn btn-primary" value="Mais Um!">
+        <input type="button" onclick="reset()" class="btn btn-primary" value="Reset">
+
+
+        <hr>
+        <h2>Exercicio 4</h2>
+        <input type="button" onclick="filtro1()" class="btn btn-primary" value="Filtro 1" >
+        <input type="button" onclick="filtro2()" class="btn btn-primary" value="Filtro 2" >
+        <input type="button" onclick="resetar()" class="btn btn-primary" value="Reset" >
+        <img src="./img/panda.png" alt="panda">
+
+
+
+        <hr>
+        <h2>Exercicio 5</h2>
+        <h3>Calculadora I Simples</h3>
+        <div class="mb-3">
+          <label class="form-label">Insira um valor:</label>
+          <input id="valor1" class="form-control" type="number">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Insira um valor:</label>
+          <input  id="valor2" class="form-control" type="number">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Selecione a operação:</label>
+          <select class="form-select" aria-label="Default select example">
+            <option value="somar" selected>Somar</option>
+            <option value="subtrair">Subtrair</option>
+            <option value="dividir">Dividir</option>
+            <option value="multiplicar">Multiplicar</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Resultado:</label>
+          <input id="resultado" class="form-control" type="text" readonly>
+        </div>
+        <div class="d-grid gap-2">
+          <input onclick="calcular()" class="btn btn-success btn-lg" value="Calcular">
+          <input type="button" onclick="reset()" class="btn btn-light" value="Reset">
+        </div>
+
+
+        <hr>
+        <h2>Exercicio 6</h2>
+
+
+    </section>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+ </body>
+</html>
