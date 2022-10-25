@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Homework 6</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+    <section>
+    <h2>Questão 1</h2>
+    <h5>Exibir mensagem após 3 segundos</h5>
+    <input type="button" id="botaoExibir" value="Exibir" onclick="exibirMensagem()">
+
+    <hr>
+    <h2>Questão 2</h2>
+    <h5>Clique no Botão abaixo para ver a hora atual</h5>
+    <input type="button" id="botaoVerHora" value="Ver Hora" onclick="verHora()">
+    <p id="horario"></p>
+    <input type="button" id="botaoResetarHora" value="Resetar Hora" onclick="resetarHora()">
+  
+
+    <hr>
+    <h2>Questão 3</h2>
+    <h5>Mudando a cor</h5>
+    <input type="button" id="botaoTrocarCor" value="Trocar a Cor!" onclick="trocarCor()" oninput="trocarCor(this.value)">
+    <input type="button" id="botaoResetarCor" value="Resetar a Cor!" onclick="resetarCor()">
+    <div id="cores">
+
+    </div>
+
+    <hr>
+    <h2>Questão 4</h2>
+    <h5>Sorteio</h5>
+
+    <input type="text" id="nomeSorteado">
+    <div class="form-group">
+        <label for="name" class="text-info">Velocidade:</label><br>
+        <input type="text" name="Velocidade" id="input-Velocidade" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="name" class="text-info">Tempo:</label><br>
+        <input type="text" name="Tempo" id="input-Tempo" class="form-control">
+    </div>
+    <button id="sortear" onclick="sorteando()">Sortear</button>
+   
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
