@@ -7,10 +7,9 @@ function exibirMensagem(){
 
 //Questão 2
 function verHora(){
-    let hora = new Date().toLocaleTimeString();
-    setTimeout(() => {
-        document.getElementById('horario').innerHTML = hora;
-    }, 2000);
+    let hora = new Date().toLocaleTimeString();  
+    document.getElementById("horario").innerText = hora;  
+    setTimeout(horaAtual, 1000);
 }
 function resetarHora(){
     document.getElementById('horario').innerHTML = "";
